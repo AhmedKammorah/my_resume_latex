@@ -1,0 +1,266 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Author : Ahmed Kammorah
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{}{\Large Ahmed Kammorah}} & Email : \href{mailto:ahmedkammorah@gmail.com}{ahmedkammorah@gmail.com}\\
+  \href{} & Mobile : +20-1033645333 \\
+\end{tabular*}
+
+
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {IN3}{Cairo, Egypt}
+      {Product Architect}{Jan 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Buzzdigger NLP/ML platform}
+          {Platform for pre-training(analyze, Morphological analysis), train, evaluate and serve Machine learning(NLP/ML) models for text data enrichment.}   
+          {Built the service and framework to train ML Models to extract and add enrichments for text data (language, dialect, topic, sentiment, NER) with foc us on Arabic text.}
+        \resumeItem{Data Enrichment Engine}
+          {Productionized the trained model and serve it in different shape one through API Service(Rest, RPC) and other through stream processing service.} 
+          {Built the ML platform infrastructure and flow for continuous development and continuous delivery for any new ML Model.}
+        \resumeItem{Search and filter API}
+          {Service to offer full-text search and advanced filters API for the data.}
+        \resumeItem{Web app}
+          {
+            The main web app for the Buzzdigger platform for user and query mangment, data exploring and analytics dashboards integrated with BI Tools such as Power BI and superset. 
+            Deep integration with Power BI through it's JS SDK for more in and out interaction.
+            Lead the team to build backend API for operations, queries, authentication and build integration with power BI, Apache Superset. 
+            Python , Javascript , Angular, Docker
+          }
+
+        \resumeItem{Data Platform Infrastructure} 
+        {Design the infrastructure architecture for the data platform. 
+        Automate the implementation and setup of the data platform for stream and batch data processing. 
+        Docker, Ansible, Hadoop, YARN, Solr, Zookeeper, Druid, Kafka, Apache Nifi and Spark.
+        }
+
+        \resumeItem{Data Flow}
+        {
+        Data platform for stream and batch processing.
+        Built the data flow and the stream processing services for data cleaning, enrichment, indexing and storage to be searchable and usable by analytical and BI tools. 
+        Design the schema for the data to be used in indexing and ETL for analytics.
+        }
+
+        \resumeItem{Data Indexing} 
+        {Service for indexing moving data into different storage system (HDFS, Solr, Druid, SQL DB).} 
+        \resumeItem{Data Collection} 
+        {Design and implement collection services to collect data from a different source with the multi data type (structured and semi-structured). 
+        Optimize the data collection with smart scheduler, executer jobs.
+        Design the service with Fault Tolerance, and low latency.  
+        collect data from a different source such as social data(twitter, facebook,), news and blogs and raw custom files. 
+        push data to data flow mainly over Apache Kafka using custom data pushing service.}
+
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Trendyship}{Cario, Egypt}
+      {CTO}{Jan 2016 - Nov 2017}
+        \resumeItemListStart
+          \resumeItem{Data Crawling and Collection}
+            {Built Smart Data crawling and collection to collect fashion data and store it in the data store using  MongoDB, MySQL, File System, and AWS S3.}
+          \resumeItem{Data Cleaning}
+            {Built Smart Data cleaning service using ML/NLP to auto clean and learn from the data.}
+          \resumeItem{Data Processing Pipeline}
+            {Built data processing pipeline in two flows Stream and batch as Map reduce jobs using Kafka, Storm.}
+          \resumeItem{}
+            {Built many Rest/RPC API services for the platform apps using Python, Django, Flask, and API Gateway.}
+          \resumeItem{IOS App}
+            {Built iOS mobile app in SWIFT and web apps in AngularJS for that platform. }
+          \resumeItem{Platform Infrastructure}
+            {Built scalable containerized infrastructure for the services and platform on 3 clusters on top of AWS(EC2, S3, ECS, lambda, ..), load balancing, Docker, Kubernetes.}
+          \resumeItem{Product}
+            {Lead the development team and working with the business team to map features to software design.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Wireless Stars}{Indonesia / Egypt}
+      {Software Architect/Tech Lead}{Oct 2014 - Sep 2015}
+      \resumeItemListStart
+        \resumeItem{}
+{Lead a team of 3 and the communication with a team of 8 researchers to Build Traffic estimation platform.
+Built traffic estimation platform(ARTS) as lambda architecture with two data processing flow batching and stream and many micro-services using Java, Python, Flume, Apache Camel, Hadoop(HDFS, MapReduce), Apache Kafka, PostgreSQL, PostGIS, MySQL, custom Mobile SDK, AVRO on top of AWS
+Designed and built Smart Data collection SDK for sensors and traffic data and lead the implementation using java, android, AVRO, RPC over HTTP, custom smart collection and sync algorithms. 
+Redesigned and built the full analytics platform pipeline and it's all micro-services on Hadoop, Java, Python, Apache Kafka, MySQL and  JavaScript for Dashboard.
+Designed and built company Big Data platform to serve company products using Hadoop, queuing, data collection, data cleaning, and Processing.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Wireless Stars}{Cairo, Egypt}
+      {Senior Software Engineer}{Feb 2013 - Nov 2014}
+      \resumeItemListStart
+        \resumeItem{WAnalytics}
+                  {Worked on "WAnalytics"  which is mobile Analytics platform in different areas from data collection and Storage using Flume on HDFS, data processing to Dashboard using Java, Python, MapReduce paradigm, FS and HDFS, RabbitMQ, Android, iOS SDK's
+          Worked on Reality Gaming platform to make real-time game experience on the app and take the system to the production using Java, Rest API, custom Game engine, PHP, Sphinx
+          Worked on NavInside (Indoor positioning system) on mapping layers and built indoor maps layer and backend for Positioning Javascript, Java, PostgreSQL, PostGIS, Spring
+          Improved "Amakken"(places service) search and query latency by 50\% by optimizing  custom Geo Location data index using Sphinx search engine, Linux FS, MySql, Java
+          Worked on Notification service to send different notification to users (emails, Push in-app, Facebook posts, tweets), PHP, API, and RPC integration endpoints
+          Built Rahal Reality game IOS App using Objective-C with Location-based service, AR, notifications, localization, and Backend sync.
+          Manage and lead The infrastructure architecture for the products on Cloud providers (Linode, AWS, and others PaaS)
+          Designed and built Smart Data collection SDK for analytics and lead the implementation using java, android, iOS, Objective-C.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {WittyHeads}{Alexandria, Egypt}
+      {Software Engineer}{2012 - Dec 2013}
+      \resumeItemListStart
+        \resumeItem{Genie-US IOS APP}
+          {Built Mobile app in Objective C with custom Game Engine and heavy custom Core Animation. Design and implement the game engine and edutainment app. }
+          \resumeItem{Genie-US Backend}
+          {Built Backend for the game for player gaming and leaderboard in PHP, Java.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Means corp}{Alexandria, Egypt}
+      {Software Engineer}{2011 - 2012}
+      \resumeItemListStart
+        \resumeItem{KameleoMath IOS Game}
+          {Designed and developed native IOS and Android app and contributed to backend.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Navy IT Department}{Alexandria, Egypt}
+      {Software Engineer}{2010 - Dec 2011}
+      \resumeItemListStart
+        \resumeItem{Fleet monitoring system}
+          {a system to track and monitoring all fleet and targets. collect data from different locations and sources and serialize the data to the Master Node to visualization on maps and monitoring }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{QuantSoftware Toolkit}
+      {Open source python library for financial data analysis and machine learning for finance.}
+    \resumeSubItem{Github Visualization}
+      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+    \resumeSubItem{Recommendation System}
+      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+    \resumeSubItem{Mac Setup}
+      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+
+%-----------TOOLS & FRAMEWORKS-----------------
+\section{Tools \& Frameworks } %\footnotemark}
+  % \footnotetext{Technologies are listed in decreasing order of experience.}
+
+  \resumeSubHeadingListStart
+    \resumeItem{Languages}{Java -- Python -- Objective-C -- Swift -- C -- SQL -- JavaScript}
+    \resumeItem{Frameworks}{IOS -- Android -- Django -- Django Rest -- Flask -- Spring -- Java Play -- Angular JS -- Node JS}
+    \resumeItem{Data}{Hadoop -- Map Reduce -- Apache Spark -- Apache Solr -- Elasticsearch -- Lucene -- Sphinx -- Avro -- Thrift -- Flume -- Kafka -- Storm -- Apache Nifi -- Memcached -- RabbitMQ}
+    \resumeItem{Databases}{MySQL -- PostgreSQL -- PostGIS  -- MongoDB -- CoreData -- Realm}
+    \resumeItem{Liberies}{NLTK -- Scrapy -- scikit-learn}
+    \resumeItem{tools}{Docker -- Kubernetes -- Git -- Jenkins -- Ansible -- Maven -- Cocoa-pods -- Carthage -- Grunt/Gulp/Bower -- Webpack -- AWS(Most of the services) -- Google App Engine -- Nginx -- Gunicorn -- Apache HTTP -- Tomcat -- Azure} 
+    \resumeItem{Areas of knowledge}{Software Architecture -- Micro-services -- BigData -- Web Analytics -- Algorithms -- mobile development -- Serverless Architecture -- Web Services -- Location Based Services -- Machine Learning -- Mobile SDK Design -- API Architect -- Distributed Systems -- Neural Networks -- OOP -- Statistics -- Web Scraping -- Web Crawling -- Data Cleaning -- Basic NLP}
+
+    % \vspace{5pt}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Arab Academy for Science, Technology}{Alexandria, Egypt}
+      {Master of Science in Computer Engineering (unfinished);  GPA: 3.67/4.0}{Sep. 2011 -- Dec. 2013}
+    \resumeSubheading
+      {Alexandria Institute of Engineering and Technology}{Alexandria, Egypt}
+      {B.Sc. Computer Engineering;  GPA: 3.06/4.0}{Sep. 2005 -- July. 2010}
+  \resumeSubHeadingListEnd
+
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+     \hfill
+     \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
