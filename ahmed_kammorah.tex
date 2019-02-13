@@ -1,8 +1,5 @@
 %-------------------------
 % Resume in Latex
-% Author : Sourabh Bajaj
-% Author : Ahmed Kammorah
-% License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -51,11 +48,11 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -111,7 +108,7 @@
             
             \resumeItem{Web app}
                 {The primary web app (frontend and backend) that is used for user management, query management, data exploring, and analytics dashboards which is integrated with BI Tools.
-                Lead the team to build backend API for operations, queries, authentication and the integration with power BI, Apache Superset using \textbf{Python}, Javascript, \textbf{Flask}, Angular, Docker.} 
+                Lead the team to build backend \textbf{microservices} & APIs for operations, queries, authentication and the integration with power BI, Apache Superset using \textbf{Python}, Javascript, \textbf{Flask}, Angular, Docker.} 
                 
             \resumeItem{Data flow \& Services}
                 {Built the data flow and the stream processing services for data cleaning, enriching, indexing and storing to be searchable and usable by analytical and BI tools using \textbf{Python}, JS, \textbf{Kafka}, \textbf{Solr}, Hadoop, \textbf{Druid}, Superset, Spark, Hive, and Nifi. 
@@ -121,9 +118,9 @@
                 {
                 Design the infrastructure architecture for the data platform. 
                 Automate the implementation and setup of the data platform for stream and batch data processing. 
-                Docker, Ansible, Hadoop, YARN, Solr, \textbf{Zookeeper}, Druid, Kafka, Apache Nifi and Spark.
+                Docker, Ansible, Hadoop, YARN, Solr, \textbf{Zookeeper}, Druid, \textbf{Kafka}, Apache Nifi and Spark.
                 }
-            \item{Responsible for full design and architecture of the data and machine learning platform.} 
+            \item{Responsible for the full design and architecture of the \textbf{data} and ML platform beside the backend \textbf{microservices}.} 
             \item{Lead the engineering team with hands-on to build the platform.}
 
       \resumeItemListEnd
@@ -134,7 +131,7 @@
       {CTO}{Jan 2016 - Nov 2017}
         \resumeItemListStart
               \resumeItem{Data Crawling and Scraping Collection services}
-                {Built smart data crawling and collection, to collect fashion data and store it in the data store using  MongoDB, MySQL, File System, and AWS S3.\\
+                {Built smart data crawling and collection, to collect fashion data and store it in the data store using  \textbf{MongoDB}, MySQL, File System, and AWS S3.\\
                 Collection service that initially collected and identified more than 500K available item per local market. }
               \resumeItem{Data Cleaning}
                 {Built smart data cleaning service using ML/NLP to auto clean, automatically extract attributes and learn from the data.\\
@@ -144,7 +141,7 @@
               \resumeItem{Microservices backend}
                 {Built many Rest/RPC API services for the platform using \textbf{Python}, \textbf{Django}, Flask.}
               \resumeItem{Apps}
-                {Built iOS mobile app in \textbf{Swift}. 
+                {Built \textbf{iOS} mobile app in \textbf{Swift}. 
                  Lead the team to build web apps in AngularJS for that platform. }
               \resumeItem{Platform Infrastructure}
                 {Built scalable containerized infrastructure for the services and platform on 3 clusters on top of AWS (EC2, S3, ECS, lambda, ..), load balancing, Docker, Kubernetes, and API Gateway.}
@@ -161,7 +158,7 @@
                 Lead a team of 3 and the collaboration with a team of 8 researchers to develop production-ready algorithms and modules (Localizer, Map Matcher, Transportation Mode detector, Traffic Estimator). \\
                 Built the platform as lambda architecture with two flow batch and stream data flow. \\
                 Designed and lead the development of the end to end data pipeline and all backend services related to the platform 
-                using \textbf{Java}, \textbf{Python}, Flume, Apache Camel, Hadoop (HDFS, MapReduce), Apache Kafka, PostgreSQL, PostGIS, MySQL, custom Mobile SDK, AVRO, and AWS.
+                using \textbf{Java}, \textbf{Python}, Flume, Apache Camel, Hadoop (HDFS, MapReduce), PostgreSQL, PostGIS, MySQL, custom Mobile SDK, AVRO, and AWS.
 
               }
             \resumeItem{Smart collection mobile SDK}
@@ -183,12 +180,12 @@
               {
               Is a reality treasurer hunt games experience on the app.
               Redesigned and built the custom game engine for the production level and scale.
-              Contributed to building players, events, venue, and datastore backend using Java, \textbf{Spring}, Play, rest API.
+              Contributed to building players, events, venue, and datastore backend using \textbf{Java}, \textbf{Spring}, \textbf{Play}, rest API.
               Built Rahal IOS App using Objective-C with \textbf{Location-based} service, AR, notifications, localization, and backend communications.
               }
             \resumeItem{Amakken} 
               {Is a places service to make it easy to index 
-              Improved search and query latency by 50\% by optimizing custom Geo Location data index using \href{http://sphinxsearch.com/}{Sphinx search engine}, Java, Linux FS, MySql
+              Improved search and query latency by 50\% by optimizing custom Geo Location data index using \href{http://sphinxsearch.com/}\textbf{{Sphinx search engine}}, \textbf{Java}, Linux FS, MySql
               }
             \resumeItem{Pushmanger}
               { Notifications and social media service to send a different kind of notification to users (emails, in-app, facebook posts, tweets).
@@ -196,7 +193,7 @@
               }
             \resumeItem{NavInside (Indoor positioning system)}
               {
-              Built indoor maps layer. Built positioning backend using Javascript, Java, PostgreSQL, PostGIS and Spring.
+              Built indoor maps layer. Built positioning backend using \textbf{Javascript}, \textbf{Java}, PostgreSQL, PostGIS and Spring.
               }
             \item{Lead the design and implementation of infrastructure architecture for the products on Cloud providers (Linode, AWS, and local servers).}
       \resumeItemListEnd
@@ -288,3 +285,11 @@
 
 %-------------------------------------------
 \end{document}
+
+
+%-------------------------
+% Resume in Latex
+% base template Author : Sourabh Bajaj
+% Author : Ahmed Kammorah
+% License : MIT
+%------------------------
